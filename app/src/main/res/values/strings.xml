@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Talk to Me</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="categories">Categories</string>
+    <string name="food">Food</string>
+    <string name="drink">Drink</string>
+    <string name="activities">Activities</string>
+    <string name="expressions">Common Expressions</string>
+    <string name="food_footer">Go back to Categories</string>
+
+</resources>

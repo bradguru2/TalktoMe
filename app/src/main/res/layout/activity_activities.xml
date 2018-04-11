@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#ff93d7ff">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/food_footer"
+        android:id="@+id/txtFooter"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:background="#ffc1c3c6"
+        android:onClick="onCategoryClick" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/activities"
+        android:id="@+id/txtDrinkHeader"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="@dimen/abc_text_size_display_1_material"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollViewActivities"
+        android:layout_below="@+id/txtDrinkHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/txtFooter">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageBike"
+                android:src="@drawable/bike"
+                android:clickable="true"
+                android:onClick="onBicyceClick"
+                android:contentDescription="@string/activities"
+                android:cropToPadding="false"
+                android:paddingLeft="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageSwimming"
+                android:src="@drawable/swimming"
+                android:clickable="true"
+                android:onClick="onSwimmingClick"
+                android:contentDescription="@string/activities"
+                android:cropToPadding="false"
+                android:paddingLeft="30dp"
+                android:layout_below="@+id/imageBike"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageBooks"
+                android:src="@drawable/books"
+                android:clickable="true"
+                android:onClick="onReadBooks"
+                android:contentDescription="@string/activities"
+                android:cropToPadding="false"
+                android:paddingLeft="30dp"
+                android:layout_below="@+id/imageSwimming"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="10dp"
+                android:scrollbarStyle="outsideOverlay" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageBubbles"
+                android:src="@drawable/bubbles"
+                android:clickable="true"
+                android:onClick="onBlowBubbles"
+                android:contentDescription="@string/activities"
+                android:cropToPadding="false"
+                android:paddingLeft="30dp"
+                android:layout_below="@+id/imageBooks"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="10dp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageCar"
+                android:src="@drawable/car"
+                android:clickable="true"
+                android:onClick="onDriveCar"
+                android:contentDescription="@string/activities"
+                android:cropToPadding="false"
+                android:paddingLeft="30dp"
+                android:layout_below="@+id/imageBubbles"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="10dp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imagePotty"
+                android:src="@drawable/potty"
+                android:clickable="true"
+                android:onClick="onUsePotty"
+                android:contentDescription="@string/activities"
+                android:cropToPadding="false"
+                android:paddingLeft="30dp"
+                android:layout_below="@+id/imageCar"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="10dp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageBall"
+                android:src="@drawable/play_ball"
+                android:clickable="true"
+                android:onClick="onPlayBall"
+                android:contentDescription="@string/activities"
+                android:cropToPadding="false"
+                android:paddingLeft="30dp"
+                android:layout_below="@+id/imagePotty"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="10dp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageGoPlay"
+                android:src="@drawable/playground"
+                android:clickable="true"
+                android:onClick="onGoPlay"
+                android:contentDescription="@string/activities"
+                android:cropToPadding="false"
+                android:paddingLeft="30dp"
+                android:layout_below="@+id/imageBall"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="10dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

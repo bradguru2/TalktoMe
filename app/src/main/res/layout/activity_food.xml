@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#ff93d7ff">
+
+    <TextView
+        android:id="@+id/txtFooter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#ffc1c3c6"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:onClick="onCategoryClick"
+        android:text="@string/food_footer"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/food"
+        android:id="@+id/txtFoodHeader"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="@dimen/abc_text_size_display_1_material"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/txtFoodHeader"
+        android:layout_above="@+id/txtFooter">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgPizza"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/pizza"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onPizzaClick"
+                android:contentDescription="@string/food"
+                android:cropToPadding="false"
+                android:layout_alignParentEnd="false" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgMcDonalds"
+                android:clickable="true"
+                android:src="@drawable/mcdonalds"
+                android:onClick="onMcDonaldsClick"
+                android:contentDescription="@string/food"
+                android:focusable="true"
+                android:layout_below="@+id/imgPizza"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgEatCookie"
+                android:clickable="true"
+                android:src="@drawable/cookie"
+                android:onClick="onEatCookie"
+                android:contentDescription="@string/food"
+                android:focusable="true"
+                android:layout_below="@+id/imgMcDonalds"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgEatChicken"
+                android:clickable="true"
+                android:src="@drawable/fried_chicken"
+                android:onClick="onEatChicken"
+                android:contentDescription="@string/food"
+                android:focusable="true"
+                android:layout_below="@+id/imgEatCookie"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgEatRice"
+                android:clickable="true"
+                android:src="@drawable/rice"
+                android:onClick="onEatRice"
+                android:contentDescription="@string/food"
+                android:focusable="true"
+                android:layout_below="@+id/imgEatChicken"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgEatDrumstick"
+                android:clickable="true"
+                android:src="@drawable/icecream_drumstick"
+                android:onClick="onEatDrumstick"
+                android:contentDescription="@string/food"
+                android:focusable="true"
+                android:layout_below="@+id/imgEatRice"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
